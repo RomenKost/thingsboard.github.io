@@ -157,72 +157,91 @@ AI Assistance offers powerful features to help you make informed decisions and o
 
 The available visualizations are:
 
-* Table (without dynamic columns)
+* Table
+* Dynamic table
 * Line chart
 * Pie chart
-* Bar chart
+* Bar chart (Vertical,  Horizontal, Stacked)
+* Scatter Plot
 * Heatmap
 * Heatmap calendar
 * Card (without compared value)
+* Card with line
   {% include images-gallery.html imageCollection="trendz-assistance-capabilities-visualization" %}
 
-**2.Apply a date picker**
+**2. Apply a date picker**
 
 Apply a date picker (by default for this week):
 {% include images-gallery.html imageCollection="trendz-assistance-capabilities-date-picker" %}
 
-**3.Use date fields**
+**3. Use date fields**
 {% include images-gallery.html imageCollection="trendz-assistance-capabilities-date-fields" %}
 
-**4.Assign a name for each column and visualization**
+**4. Assign a name for each column and visualization**
 {% include images-gallery.html imageCollection="trendz-assistance-capabilities-view-name" %}
 
-**5.Add filters**
+**5. Add filters**
 {% include images-gallery.html imageCollection="trendz-assistance-capabilities-filter" %}
 
-**6.Answer questions in different languages**
+**6. Answer questions in different languages**
 {% include images-gallery.html imageCollection="trendz-assistance-capabilities-foreign-language" %}
+
+**7. Handle conversation**
+
+The current version of the AI Assistant can remember context and generate answers based on all user messages, specifications, and responses.
+{% include images-gallery.html imageCollection="trendz-assistance-capabilities-conversation" %}
 
 ## Chat Page
 
-After sending any message to the new chat or pressing on the previously initialized chat you will be redirected to the **Chat page**. The chat history will be shown on the left side of the screen (1).
-The visualization of the previously asked in this chat question will be located on the right side of the screen (2).
+After sending a message in a new chat or selecting a previously initialized chat, you will be redirected to the **Chat Page**. The chat history appears on the left side of the screen (1), and the visualization of the selected question in this chat appears on the right side of the screen (2).
 
-If it is necessary it is possible to change the generated time range or to change or remove generated filters.
+If necessary, you can adjust the generated time range or modify/remove applied filters.  
 {% include images-gallery.html imageCollection="trendz-assistance-chat-page" %}
 
-On this page it is possible to:
+On this page, you can:
 
 * **Type and send a new message**:
-  * It’s possible to do this by pressing the *New message* button, typing and sending the message by pressing the *Send* icon on the left side of the input field.
+  * You can type your message, and send it by clicking the *Send* icon on the right side of the input field.  
     {% include images-gallery.html imageCollection="trendz-assistance-send-new-msg" %}
 
 * **Edit the last message**:
-  * It’s possible to do this by pressing the *Edit last message* button, modifying this message, and sending the message by pressing the *Submit* icon on the left side of the input field.
-  * It could be useful when an AI Assistant returns incorrect results to specify additional details.
+  * You can modify the message, and submit it by clicking the *Submit* icon on the right side of the input field.
+  * This can be useful if the AI Assistant returned incorrect results, and you want to provide more details.  
     {% include images-gallery.html imageCollection="trendz-assistance-edit-msg" %}
 
 * **Check the selected message**:
-  * It’s possible to do this by pressing on the message. After the previously generated view/answer will appear on the right side of the screen.
+  * You can click on any message to view its previously generated answer on the right side of the screen.  
     {% include images-gallery.html imageCollection="trendz-assistance-check-msg" %}
-  
-* **Edit selected message**:
-  * It’s possible to do this by pressing on the pencil icon on the left of the message to edit. After that, it’s necessary to modify the selected message by typing inside it. 
-You can confirm or cancel the change by pressing the buttons on the right side of the message. 
-  * It could be useful when an AI Assistant returns incorrect results to specify additional details.
-    {% include images-gallery.html imageCollection="trendz-assistance-edit-selected-msg" %}
 
-* **Rerun selected message**:
-  * It’s possible to do this by pressing the *refresh button* on the right upper side of the selected message. 
-  * It could be useful when an AI Assistant returns incorrect results.
-    {% include images-gallery.html imageCollection="trendz-assistance-rerun-msg" %}
+* **Regenerate the answer**:
+  * You can click the *Refresh* button at the top right of the message block to regenerate the assistant's answer.
+  * This can be helpful if the response was incorrect.  
+    {% include images-gallery.html imageCollection="trendz-assistance-rerun-answer" %}
 
-* **Save config**:
-  * This button could be useful to save the generated view to the selected view collection.
+* **Check Assistant's Interpretation**:
+  * You can click the *Assistant's Interpretation* label at the top left of the message.
+  * This can help verify whether the AI Assistant correctly understood your request.  
+    {% include images-gallery.html imageCollection="trendz-assistance-check-interpretation" %}
+
+* **Save Config**:
+  * You can use this button to save the generated view to a selected view collection.  
     {% include images-gallery.html imageCollection="trendz-assistance-save-config" %}
 
+* **Review Generated View**:
+  * You can click the *See Details* button at the top right of the screen to review the generated view.
+  * This helps verify whether the AI Assistant correctly selected Business Entities, Business Entity Fields, and Aggregations.  
+    {% include images-gallery.html imageCollection="trendz-assistance-check-view-config" %}
+* * You can also access additional settings by clicking the *Settings* button in the top right corner of the screen.  
+    {% include images-gallery.html imageCollection="trendz-assistance-check-view-settings" %}
+* * To exit this tab, you can click the *Back* button.  
+    {% include images-gallery.html imageCollection="trendz-assistance-exit-view-config" %}
 
-⚠️ *Note*: the current version of AI Assistant does not remember previous messages, so if it’s necessary to add specifications, better to do it by editing the message.
+* **Generate Chat Summary**:
+  * You can click the *Get Chat Summary* button at the top right of the screen.
+  * This feature helps analyze and identify anomalies or correlations in the generated view configuration.  
+    {% include images-gallery.html imageCollection="trendz-assistance-generate-chat-summary" %}
+* * The chat summary will appear at the top of the screen.  
+    {% include images-gallery.html imageCollection="trendz-assistance-chat-summary-example" %}
 
 ## Chat Topology Entities
 To answer the query, AI Assistance should analyze the provided topology. It could be challenging to analyze the topology with hundreds of business entities and/or business entity fields, 
@@ -273,7 +292,7 @@ It’s impossible to use the default large language model for self-hosted client
 
 AI Assistance cannot:
   * Create anomaly or prediction models, create calculation fields
-  * Create next visualizations: tables with dynamic columns, scatter plots and cards with line chart or with compared value 
+  * Create cards with the compared value 
   * Specify view/view field settings
 
 These features will be added in future releases.

@@ -81,6 +81,8 @@ toc:
       path: /docs/trendz/ai-assistance-overview/
     - title: AI Assistant Widget
       path: /docs/trendz/ai-assistance-widget/
+    - title: Trendz Prompts
+      path: /docs/trendz/ai-assistance-prompts/
     - title: Custom AI Model Configuration
       path: /docs/trendz/custom-ai-model-configuration/
 - title: Share views
