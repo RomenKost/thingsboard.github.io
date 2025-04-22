@@ -113,4 +113,4 @@ Supported models:
 
 ## Next Steps
 
-{% assign currentGuide = "EmbedVisualizations" %}{% include templates/trndz-guides-banner.md %}
+{% assign currentGuide = "AiAssistant" %}{% include templates/trndz-guides-banner.md %}

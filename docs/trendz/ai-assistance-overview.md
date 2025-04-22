@@ -301,4 +301,4 @@ These features will be added in future releases.
 
 ## Next Steps
 
-{% assign currentGuide = "EmbedVisualizations" %}{% include templates/trndz-guides-banner.md %}
+{% assign currentGuide = "AiAssistant" %}{% include templates/trndz-guides-banner.md %}
