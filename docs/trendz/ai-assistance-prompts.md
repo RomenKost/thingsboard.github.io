@@ -277,10 +277,63 @@ To access the Prompts tab, you can follow these steps:
   {% include images-gallery.html imageCollection="trendz-prompts-markdown-save" %}
 
 ## System prompts
+
+Trendz contains default system prompts that are available from installation. By default, for generating summaries, 
+Trendz uses the "Trendz System Default Summary Prompt". Here is the list of all prompts that system uses:
+
 * **Trendz System Default Summary Prompt**
+
+  This prompt provides a high-level summary of current performance trends, customer satisfaction, and noteworthy changes. 
+  It is designed to give the snapshot of the business situation with clear and concise insights.
+
 * **Trendz System Data Analysis Prompt**
+
+  This prompt is focused on analyzing datasets, uncovering trends, and providing actionable insights for decision-making. 
+  It leverages statistical methods and data visualization tools to identify key patterns and outliers.
+
 * **Trendz System Data Quality Review Prompt**
+
+  Aimed at reviewing datasets for data quality, this prompt highlights inconsistencies, outliers, and other anomalies 
+  that could affect the accuracy of analysis. It includes methods like data profiling and statistical tests to assess 
+  data integrity.
+
 * **Trendz System Positive Performance Prompt**
+
+  This prompt focuses on identifying areas of strong performance and growth opportunities. It analyzes positive trends 
+  and provides recommendations to leverage these successes for further business achievements.
+
 * **Trendz System Short Summary Prompt**
 
+  This prompt is designed to create a concise 3-10 word summary of key points from the data. It generates a meaningful
+  name or headline that encapsulates the essence of the dataset without further elaboration.
+
 ## Best practices
+
+Creating effective prompts is key to getting accurate and meaningful responses from Large Language Models (LLMs). Here are some essential best practices:
+
+1. **Be Clear and Specific**  
+  Ensure your prompt is clear and specific to avoid vague or ambiguous responses. The more detail you provide, the better the model can understand and respond accurately.
+
+2. **Use Natural Language**  
+  Write prompts as you would speak to another person. This helps the model interpret your request and generate a natural-sounding response.
+
+3. **Leverage Markdown for Structure**  
+  Use Markdown formatting to organize and structure your prompt. For example:
+
+  - Use **bold** for emphasis
+  - Use *italics* for subtle hints or notes
+  - Include headers for clear topic segmentation  
+    
+  This not only helps the model interpret your request more effectively but also makes your prompt more readable.
+
+4. **Keep Prompts Concise**  
+  While detail is important, keep your prompts concise. Too much information can overwhelm the model, leading to less focused responses.
+
+5. **Test and Refine**  
+  Prompt creation is an iterative process. Test your prompts, review the responses, and refine them to improve accuracy and relevance.
+
+By following these practices, you can create effective prompts that lead to better results from LLMs.
+
+## Next Steps
+
+{% assign currentGuide = "AiAssistant" %}{% include templates/trndz-guides-banner.md %}
