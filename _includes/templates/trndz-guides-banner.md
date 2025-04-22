@@ -23,6 +23,6 @@
 - [**Share and embed Visualizations**](/docs/trendz/embed-visuals) - Learn how to add Trendz visualizations on ThingsBoard dashboard or 3rd party web pages.
 {% endif %}  
 {% if currentGuide != "AiAssistant" %}
-- [**Ai Assistant**](/docs/trendz/ai-assistance-overview) - Learn how to utilize Trendz AI capabilities.
+- [**AI Assistant**](/docs/trendz/ai-assistance-overview) - Learn how to utilize Trendz AI capabilities.
 {% endif %}
 <br>
