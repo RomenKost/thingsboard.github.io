@@ -130,8 +130,6 @@ Trendz Prompts is a powerful feature that enables the creation of various prompt
 AI summaries for views, providing users with clear and insightful overviews. They can also be used to create 
 human-friendly, natural-sounding summaries that enhance the user experience.
 
-## View Summary
-
 ## Prompts Tab
 
 In this tab, you can check, create, rename, modify, or delete prompts.
@@ -307,17 +305,21 @@ Trendz uses the "Trendz System Default Summary Prompt". Here is the list of all 
   This prompt is designed to create a concise 3-10 word summary of key points from the data. It generates a meaningful
   name or headline that encapsulates the essence of the dataset without further elaboration.
 
+## View Summary
+
+
+
 ## Best practices
 
 Creating effective prompts is key to getting accurate and meaningful responses from Large Language Models (LLMs). Here are some essential best practices:
 
-1. **Be Clear and Specific**  
+* **Be Clear and Specific**  
   Ensure your prompt is clear and specific to avoid vague or ambiguous responses. The more detail you provide, the better the model can understand and respond accurately.
 
-2. **Use Natural Language**  
+* **Use Natural Language**  
   Write prompts as you would speak to another person. This helps the model interpret your request and generate a natural-sounding response.
 
-3. **Leverage Markdown for Structure**  
+* **Leverage Markdown for Structure**  
   Use Markdown formatting to organize and structure your prompt. For example:
 
   - Use **bold** for emphasis
@@ -326,10 +328,10 @@ Creating effective prompts is key to getting accurate and meaningful responses f
     
   This not only helps the model interpret your request more effectively but also makes your prompt more readable.
 
-4. **Keep Prompts Concise**  
+* **Keep Prompts Concise**  
   While detail is important, keep your prompts concise. Too much information can overwhelm the model, leading to less focused responses.
 
-5. **Test and Refine**  
+* **Test and Refine**  
   Prompt creation is an iterative process. Test your prompts, review the responses, and refine them to improve accuracy and relevance.
 
 By following these practices, you can create effective prompts that lead to better results from LLMs.
