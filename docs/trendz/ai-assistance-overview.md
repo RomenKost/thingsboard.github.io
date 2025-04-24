@@ -1,7 +1,7 @@
 ---
 layout: docwithnav-trendz
-title: Interacting with Trendz AI Assistance
-description: Step-by-step guide to interact with Trendz AI Assistance.
+title: Interacting with Trendz AI Assistant
+description: Step-by-step guide to interact with Trendz AI Assistant.
 
 trendz-assistance-overview:
   0:
@@ -173,7 +173,7 @@ trendz-assistance-topology:
 * TOC
 {:toc}
 
-AI assistance is a powerful feature that enables the creation of various visualizations. It allows you to generate
+AI Assistant is a powerful feature that enables the creation of various visualizations. It allows you to generate
 different visualizations according to the request given in the free-speech form and specify the necessary details
 like date range, time grouping, aggregation, filtering, etc.
 
