@@ -39,7 +39,7 @@ trendz-prompts-check-selected-prompt:
     title: You can click on any prompt in the table to view its content.
   1:
     image: /images/trendz/ai/prompts/check-selected-prompt-2.png
-    title: Content of Trendz System Default Summary Prompt
+    title: Content of Trendz System Default Summary Prompt. Additionally, you can copy the prompt ID by clicking the *Copy prompt ID* button in the upper-right corner of the tab. The prompt ID will be copied to the clipboard.
     
 trendz-prompts-edit-selected-prompt:
   0:
@@ -109,8 +109,8 @@ trendz-prompts-markdown-rename:
     image: /images/trendz/ai/prompts/markdown-rename-2.png
     text: Enter the new name.
   2:
-    image: /images/trendz/ai/prompts/markdown-rename-2.png
-    text: Click any free space to confirm the changes
+    image: /images/trendz/ai/prompts/markdown-rename-3.png
+    text: Click any free space to confirm the changes.
 
 trendz-prompts-markdown-confirm:
   0:
@@ -166,11 +166,14 @@ To access the Prompts tab, you can follow these steps:
 
   {% include images-gallery.html imageCollection="trendz-prompts-create-new-prompt" %}
 
-* **Check selected prompt**
+* **Check selected prompt and Copy prompt ID**
 
-  You can click on any prompt in the table to view its content. This will take you to the Markdown tab 
+  You can click on any prompt in the table to view its content. This will take you to the Markdown tab
   (see more about interacting with the Markdown tab in the relevant section).
-    {% include images-gallery.html imageCollection="trendz-prompts-check-selected-prompt" %}
+
+  Additionally, you can copy the prompt ID by clicking the *Copy prompt ID* button in the upper-right corner of the tab.
+  The prompt ID will be copied to the clipboard.
+  {% include images-gallery.html imageCollection="trendz-prompts-check-selected-prompt" %}
 
 * **Edit selected prompt**
 
