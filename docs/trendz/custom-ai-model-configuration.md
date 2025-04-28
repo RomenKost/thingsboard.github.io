@@ -77,6 +77,9 @@ Supported models:
 * o3-mini (Recommended - cost efficiency, high performance but slow speed)
   * Input (1m) token price: 1.1$
   * Output (1m) token price: 4.4$
+* o4-mini (Recommended - cost efficiency, high performance but slow speed)
+  * Input (1m) token price: 1.1$
+  * Output (1m) token price: 4.4$
 
 ## Amazon Bedrock
 
