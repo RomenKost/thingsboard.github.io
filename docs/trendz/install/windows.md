@@ -133,7 +133,7 @@ In this option, Python will be installed on your Windows user account, and the r
 
 Follow the next steps:
 
-#### Download and install Python
+* **Download and install Python**
 
 Download and install Python 3.11.0 from the [official Python website](https://www.python.org/downloads/release/python-3110/).
 
@@ -155,7 +155,7 @@ You will output like this:
 Python 3.11.0
 ```
 
-#### Install required python packages
+* **Install required python packages**
 
 Create the requirements.txt file with the following content:
 
@@ -178,7 +178,7 @@ pip install --user --no-cache-dir -r requirements.txt
 ```
 {: .copy-code}
 
-#### Configure venv connection for Trendz
+* **Configure venv connection for Trendz**
 
 Open in Notepad with Administrator rights the file “C:\Program Files (x86)\trendz\conf\trendz.yml” and locate the **“script-engine”** section.
 
@@ -191,7 +191,7 @@ In this option, Python will still be installed on your user account, but we will
 
 Follow the next steps:
 
-#### Download and install Python
+* **Download and install Python**
 
 Download and install Python 3.11.0 from the [official Python website](https://www.python.org/downloads/release/python-3110/).
 
@@ -208,7 +208,7 @@ You will output like this:
 Python 3.11.0
 ```
 
-#### Create python virtual environment (venv)
+* **Create python virtual environment (venv)**
 
 Create a folder where the virtual environment will be stored. You can choose any path — for example, we place it in the same directory as Trendz: **C:\Program Files (x86)\trendz**
 
@@ -219,7 +219,7 @@ py -3.11 -m venv venv
 ```
 {: .copy-code}
 
-#### Install required python packages
+* **Install required python packages**
 
 Create the requirements.txt file with the following content:
 
@@ -251,7 +251,7 @@ Find the **“custom-venv-path”** field and replace the **“/usr/bin/python3�
 
 If you want to make a clean installation, you need to remove all previous versions of Python:
 
-#### 1. Remove Python via **“Programs and Features”**
+* **1. Remove Python via “Programs and Features”**
 
 Click on **Start**, then go to **Control Panel** → **Programs** → **Programs and Features**, find Python and Python Launcher, and remove them.
 
@@ -261,7 +261,7 @@ You will see the uninstallation window like this:
 
 ![image](/images/user-guide/install/windows/windows-python-3.png)
 
-#### 2. Uninstall Python from **Chocolatey**
+* **2. Uninstall Python from Chocolatey**
 
 Open **PowerShell as Administrator** and run:
 
@@ -275,21 +275,21 @@ and delete it manually if needed.
 
 ![image](/images/user-guide/install/windows/windows-python-4.png)
 
-#### 3. Remove aliases
+* **3. Remove aliases**
 
 Also, you need to switch off the Python aliases that can cause issues with working with Python in the command line.
 For this purpose, you need to go to **Settings** → **Apps** → **Advanced app settings** → **App execution aliases** and find all items related to Python and switch them off.
 
 ![image](/images/user-guide/install/windows/windows-python-5.png)
 
-#### 4. Remove remaining folders
+* **4. Remove remaining folders**
 
 Make sure to delete the following folders along with all of their contents:
 
 * C:\Users\<your_username>\AppData\Local\Programs\Python
 * C:\Users\<your_username>\AppData\Roaming\Python
 
-#### 5. Last check
+* **5. Last check**
 
 Now, if you type “python” in the command line, you will get an error output like this one.
 
