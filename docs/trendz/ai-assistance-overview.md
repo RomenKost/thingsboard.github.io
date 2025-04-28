@@ -78,7 +78,7 @@ trendz-assistance-capabilities-filter:
     image: /images/trendz/ai/capabilities/16-filter.png
     title: Add filters
 
-trendz-assistance-capabilities-foreing-language:
+trendz-assistance-capabilities-foreign-language:
   0:
     image: /images/trendz/ai/capabilities/17-foreign-language.png
     title: Answer questions in different languages
@@ -92,7 +92,7 @@ trendz-assistance-chat-page:
     title: If it is necessary it is possible to change the generated time range.
   2:
     image: /images/trendz/ai/chat-page-3.png
-    title: If it is necessary it is possible to change or remove generated filters. 
+    title: If it is necessary it is possible to change or remove generated filters.
 
 trendz-assistance-send-new-msg:
   0:
@@ -271,8 +271,8 @@ On this page, you can:
     {% include images-gallery.html imageCollection="trendz-assistance-save-config" %}
 
 * **Review Generated View**:
-  * You can click the *See Details* button at the top right of the screen to review the generated view. You can also 
-    access additional settings by clicking the *Settings* button in the top right corner of the screen. To exit this tab, 
+  * You can click the *See Details* button at the top right of the screen to review the generated view. You can also
+    access additional settings by clicking the *Settings* button in the top right corner of the screen. To exit this tab,
     you can click the *Back* button.
   * This helps verify whether the AI Assistant correctly selected Business Entities, Business Entity Fields, and Aggregations.
     {% include images-gallery.html imageCollection="trendz-assistance-check-view-config" %}
@@ -333,9 +333,9 @@ It’s impossible to use the default large language model for self-hosted client
 ### Feature limitations
 
 AI Assistance cannot:
-  * Create anomaly or prediction models, create calculation fields
-  * Create cards with the compared value 
-  * Specify view/view field settings
+* Create anomaly or prediction models, create calculation fields
+* Create cards with the compared value
+* Specify view/view field settings
 
 These features will be added in future releases.
 

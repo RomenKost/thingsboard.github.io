@@ -308,10 +308,6 @@ Trendz uses the "Trendz System Default Summary Prompt". Here is the list of all 
   This prompt is designed to create a concise 3-10 word summary of key points from the data. It generates a meaningful
   name or headline that encapsulates the essence of the dataset without further elaboration.
 
-## View Summary
-
-
-
 ## Best practices
 
 Creating effective prompts is key to getting accurate and meaningful responses from Large Language Models (LLMs). Here are some essential best practices:

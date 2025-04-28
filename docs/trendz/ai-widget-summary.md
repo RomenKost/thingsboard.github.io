@@ -3,6 +3,40 @@ layout: docwithnav-trendz
 title: AI Widget Summary
 description: Step-by-step guide to set up AI Widget Summary.
 
+trendz-js-summary-module-install:
+  0:
+    image: /images/trendz/ai/widget-ai-summary/install-trendz-js-module-1.png
+    title: Open the Settings page in the Trendz App and click the Upload Module button.
+  1:
+    image: /images/trendz/ai/widget-ai-summary/install-trendz-js-module-2.png
+    title: Confirm that the module has been uploaded successfully and appears in the list.
+    
+trendz-summary-custom-action:
+  0:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-1.png
+    title: Open the dashboard containing the widget you want to enhance and switch to Edit mode.
+  1:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-2.png
+    title: Open the widget settings.
+  2:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-3.png
+    title: Navigate to the Actions tab and add new action.
+  3:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-4.png
+    title: Select Custom action as action type.
+  4:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-5.png
+    title: If you're on **v3.9+**, select the uploaded **Trendz Summary Module**..
+  5:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-6.png
+    title: If you're on **v3.6–v3.8**, paste the custom JavaScript code manually.
+  6:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-7.png
+    title: Inside the action, call the `getAnalytics()` method.
+  7:
+    image: /images/trendz/ai/widget-ai-summary/trendz-summary-action-8.png
+    title: After configuring the action, a header button will appear on your widget. When you click this button, a dialog window will open, showing a summary generated based on your widget's data and the Trendz prompt.    
+
 trendz-ai-summary-trendz-widget-example:
   0:
     image: /images/trendz/ai/widget-ai-summary/trendz-widget-example-1.png
@@ -43,6 +77,55 @@ including full customization of AI prompts and the interaction flow.
 Several ways are available for integrating AI summaries with different types of widgets.
 
 ## ThingsBoard Widgets
+You can easily integrate custom prompts from Trendz to generate a summary of the data displayed in your ThingsBoard widgets.
+This feature is available starting from **ThingsBoard PE v3.6 and higher**.
+### Trendz Summary JS Module
+Depending on your ThingsBoard version, the setup process is slightly different:
+
+#### ThingsBoard v3.9 and Higher
+Since v3.9, ThingsBoard supports using JS Modules directly in widget actions, making summary configuration straightforward.
+To set up the Trendz Summary Module:
+* Open the Settings page in the Trendz App.
+* Click the Upload Module button.
+* Confirm that the module has been uploaded successfully and appears in the list.
+
+{% include images-gallery.html imageCollection="trendz-js-summary-module-install" %}
+
+Once the module is uploaded, you can easily reference it in the Actions section of your ThingsBoard widget.
+
+#### ThingsBoard v3.6–v3.8
+In earlier ThingsBoard versions (v3.6–v3.8), JS Modules cannot be used directly in widget actions. Instead, you will need to manually copy and paste a provided JavaScript code into your custom action: 
+[Trendz JS Summary Module](https://trendz.test.cloud.tb-trendz.com/apiTrendz/publicApi/download/custom-action-ai-summary.js)
+
+### Configuring a Custom Action to Get Telemetry Summary
+
+After you have either uploaded the JS Module (v3.9+) or copied the custom code (v3.6–v3.8), follow these steps to configure your widget:
+
+1. Open the dashboard containing the widget you want to enhance and switch to Edit mode.
+2. Open the widget settings and navigate to the Actions tab.
+3. Select Custom action as action type.
+3. Add a new **Action**:
+  - If you're on **v3.9+**, select the uploaded **Trendz Summary Module**.
+  - If you're on **v3.6–v3.8**, paste the custom JavaScript code manually.
+4. Inside the action, call the `getAnalytics()` method with the following parameters:
+
+```js
+getAnalytics(widgetContext, useDefaultPrompt, promptIdOrText);
+```
+Where:
+- **`widgetContext`** – the current widget context (**required**).
+- **`useDefaultPrompt`** – `true` to use the default Trendz prompt, `false` to use your custom prompt.
+- **`promptIdOrText`** (**optional**) – either the **ID** of a saved prompt from Trendz or a **custom prompt text**.
+
+Example:
+```js
+getAnalytics(widgetContext, false, 'Get telemetry description');
+```
+
+After configuring the action, a header button will appear on your widget.
+When you click this button, a dialog window will open, showing a summary generated based on your widget's data and the Trendz prompt.
+
+{% include images-gallery.html imageCollection="trendz-summary-custom-action" %}
 
 ## Trendz Widgets
 

@@ -104,7 +104,7 @@ C:\Program Files (x86)\trendz\conf\trendz.yml
 {: .copy-code}
 
 and locate "datasource" block. Replace SPRING_DATASOURCE_URL, SPRING_DATASOURCE_USERNAME and SPRING_DATASOURCE_PASSWORD
- properties with valid values. Don't forget to replace "postgres" with your real postgres user password:
+properties with valid values. Don't forget to replace "postgres" with your real postgres user password:
 
 ```yml
 datasource:
