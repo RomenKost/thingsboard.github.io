@@ -178,8 +178,6 @@ To set up the AI summary prompt:
 
 Find out more about creating your own prompts that perfectly fit your task [here](/docs/trendz/ai-assistance-prompts/).
 
-## Use Cases
-
 ## Next Steps
 
 {% assign currentGuide = "AiAssistant" %}{% include templates/trndz-guides-banner.md %}
