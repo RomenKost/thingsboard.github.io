@@ -114,12 +114,21 @@ getAnalytics(widgetContext, useDefaultPrompt, promptIdOrText);
 ```
 Where:
 - **`widgetContext`** – the current widget context (**required**).
-- **`useDefaultPrompt`** – `true` to use the default Trendz prompt, `false` to use your custom prompt.
+- **`useDefaultPrompt`** – set to `true` to use the default Trendz prompt, or `false` to use your custom prompt.
 - **`promptIdOrText`** (**optional**) – either the **ID** of a saved prompt from Trendz or a **custom prompt text**.
+
+**⚠️ Note:** We recommend using the **ID** of a saved prompt from Trendz.  
+Using this approach simplifies prompt management and modification.  
+To learn more about Trendz Prompts, refer [here](/docs/trendz/ai-prompts-overview).
 
 Example:
 ```js
 getAnalytics(widgetContext, false, 'Get telemetry description');
+```
+
+Example (with *promptId*):
+```js
+getAnalytics(widgetContext, false, 'ef348780-a034-4ea9-9225-8b6ad112c451');
 ```
 
 After configuring the action, a header button will appear on your widget.
@@ -137,7 +146,7 @@ at the top of the Trendz widget.
 
 ### Enable AI Summary Button
 
-By default, the AI summary button is disabled for views created before Trendz 1.13.1 and for views created during the 
+By default, the AI summary button is disabled on dashboards for views created before Trendz 1.13.1 and for views created during the 
 period when the **AI Assistant Use AI Model** flag was disabled for self-hosted users 
 (Find out more about how to set up the AI Assistant module for self-hosted users [here](/docs/trendz/custom-ai-model-configuration/)).
 
