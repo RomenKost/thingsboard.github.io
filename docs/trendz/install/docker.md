@@ -75,6 +75,9 @@ services:
       THROTTLING_QUEUE_CAPACITY: 10
       THROTTLING_THREAD_POOL_SIZE: 6
       NETWORK_BUFFER_SIZE: 5242880
+      TRENDZ_CALLBACK_URL: mytrendz:8888
+    volumes:
+      - ~/.mytrendz-data/python-executor:/python-executor
   postgres:
     restart: always
     image: "postgres:15"
@@ -101,6 +104,7 @@ Where:
 - `thingsboard/trendz:{{ site.release.trendz_ver }}`          - Trendz docker image
 - `thingsboard/trendz-python-executor:{{ site.release.trendz_ver }}`          - Trendz python script executor docker image
 - `SCRIPT_ENGINE_RUNTIME_TIMEOUT`          - Python script execution timeout
+- `~/.mytrendz-data/python-executor:/python-executor`           - mounts the volume `~/.mytrendz-data/python-executor` to Trendz Python Executor additional data directory
 
 
 Run following commands, before starting docker container(s), to create folders for storing data and logs.
@@ -187,61 +191,6 @@ If you still rely on Docker Compose as docker-compose (with a hyphen) here is th
 {% include templates/info-banner.md content=dockerComposeStandalone %}
 
 To upgrade Trendz to the latest version those steps should be done **for each intermediate version**.
-
-## Standalone Python executor service
-You can use following docker compose file in case when you want to start Trendz python executor as a separate service. 
-It is useful when your Trendz service is installed in monolith mode, and you want to logically separate Trendz from service that executes Python scripts for prediction models. 
-Using same configuration you can scale Python executors independently of Trendz service.
-
-Create docker compose file:
-
-```text
-sudo nano docker-compose.yml
-```
-{: .copy-code}
-
-Add following configuration:
-
-```yml
-version: '3.0'
-services:
-  mypyexecutor:
-    restart: always
-    image: "thingsboard/trendz-python-executor:{{ site.release.trendz_ver }}"
-    ports:
-      - "8181:8181"
-    environment:
-      SCRIPT_ENGINE_RUNTIME_TIMEOUT: 30000
-      EXECUTOR_MANAGER: 1
-      EXECUTOR_SCRIPT_ENGINE: 6
-      THROTTLING_QUEUE_CAPACITY: 10
-      THROTTLING_THREAD_POOL_SIZE: 6
-      NETWORK_BUFFER_SIZE: 10485760
-```
-{: .copy-code}
-
-Where:
-
-- `8080`            - Python executor port for communication with Trendz service
-- `--restart always`        - automatically start Trendz in case of system reboot and restart in case of failure.
-- `thingsboard/trendz-python-executor:{{ site.release.trendz_ver }}`          - Trendz python script executor docker image
-- `SCRIPT_ENGINE_RUNTIME_TIMEOUT`          - Python script execution timeout
-
-```text
-docker compose up -d
-docker compose logs -f mypyexecutor
-```
-
-* Final step is to tell Trendz service how to communicate with Python executor service. You can do that by changing following environment variables in `/usr/share/trendz/conf/trendz.conf` file:
-
-```bash
-export SCRIPT_ENGINE_TIMEOUT=30000
-export SCRIPT_ENGINE_PROVIDER=DOCKER_CONTAINER
-export SCRIPT_ENGINE_DOCKER_PROVIDER_URL=PYTHON_EXECUTOR_HOST:PYTHON_EXECUTOR_PORT
-```
-{: .copy-code}
-
-Note: you need to replace `PYTHON_EXECUTOR_HOST` and `PYTHON_EXECUTOR_PORT` with actual values of your Python executor service and ensure that Trendz is able to send network traffic to that destination.
 
 ## Troubleshooting
 

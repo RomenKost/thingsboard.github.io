@@ -27,6 +27,8 @@ toc:
     path: /docs/trendz/install/trndz-upgrade-instructions-kubernetes/
 - title: Connect Trendz to Thingsboard
   path: /docs/trendz/connect-thingsboard/
+- title: Python Executor Configuration
+  path: /docs/trendz/install/python-executor-configuration/
 - title: Configuration properties
   path: /docs/trendz/configuration-properties/
 - title: Post-installation steps
