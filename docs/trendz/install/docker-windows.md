@@ -111,6 +111,7 @@ Where:
 - `thingsboard/trendz:{{ site.release.trendz_ver }}`          - Trendz docker image
 - `thingsboard/trendz-python-executor:{{ site.release.trendz_ver }}`          - Trendz python script executor docker image
 - `SCRIPT_ENGINE_RUNTIME_TIMEOUT`          - Python script execution timeout
+- `TRENDZ_CALLBACK_URL`           - URL to connect to Trendz REST API (must be reachable from the Python Executor container)
 - `mytrendz-data/python-executor:/python-executor`           - mounts the volume `mytrendz-data/python-executor` to Trendz Python Executor additional data directory
 
 ### Setup Docker volumes    
@@ -126,7 +127,7 @@ docker volume create mytrendz-logs
 ```
 {: .copy-code}
 
-**NOTE**: replace directory ~/.mytrendz-data and ~/.mytrendz-logs with directories you’re planning to used in docker-compose.yml.
+**NOTE**: replace directory mytrendz-data and mytrendz-logs with directories you’re planning to used in docker-compose.yml.
 
 ### Running service
 

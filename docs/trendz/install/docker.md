@@ -104,6 +104,7 @@ Where:
 - `thingsboard/trendz:{{ site.release.trendz_ver }}`          - Trendz docker image
 - `thingsboard/trendz-python-executor:{{ site.release.trendz_ver }}`          - Trendz python script executor docker image
 - `SCRIPT_ENGINE_RUNTIME_TIMEOUT`          - Python script execution timeout
+- `TRENDZ_CALLBACK_URL`           - URL to connect to Trendz REST API (must be reachable from the Python Executor container)
 - `~/.mytrendz-data/python-executor:/python-executor`           - mounts the volume `~/.mytrendz-data/python-executor` to Trendz Python Executor additional data directory
 
 
@@ -113,6 +114,7 @@ To do this (to change user) **chown** command is used, and this command requires
 
 ```bash
 mkdir -p ~/.mytrendz-data && sudo chown -R 799:799 ~/.mytrendz-data
+mkdir -p ~/.mytrendz-data/python-executor && sudo chown -R 799:799 ~/.mytrendz-data/python-executor
 mkdir -p ~/.mytrendz-logs && sudo chown -R 799:799 ~/.mytrendz-logs
 ```
 {: .copy-code}
