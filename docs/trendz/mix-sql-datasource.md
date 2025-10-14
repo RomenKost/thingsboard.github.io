@@ -306,7 +306,7 @@ matching the permissions already set in ThingsBoard.
 When combining ThingsBoard and external data in visualizations, Trendz uses the entity links to filter external data. 
 For example, if an external table stores maintenance history for factory machines, users will only see maintenance details for machines they have access to in ThingsBoard.
 
-This approach ensures data security and provides accurate insights based solely on accessible data, maintaining a trusted user experience.
+This approach ensures data security and provides accurate insights based solely on accessible data.
 
 ## Next Steps
  

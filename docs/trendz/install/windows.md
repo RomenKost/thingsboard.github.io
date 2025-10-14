@@ -192,7 +192,7 @@ to validate credentials.
 To utilize all Trendz capabilities, such as Trendz Python Calculation Fields or Prediction Models, it is essential to
 install an additional service: the Trendz Python Executor, which can securely run Python code.
 
-You can learn more about how to install it [here](/docs/trendz/install/python-executor-configuration).
+You can learn more about how to install it [here](/docs/trendz/install/python-executor-configuration-windows).
 
 ## Post-installation steps
 It is essential to follow these [instructions](/docs/trendz/post-installation-steps) to fully use all features, such as saving telemetry to ThingsBoard and adding Trendz views to dashboards.

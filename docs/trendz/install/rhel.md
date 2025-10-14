@@ -227,7 +227,7 @@ to validate credentials.
 To utilize all Trendz capabilities, such as Trendz Python Calculation Fields or Prediction Models, it is essential to
 install an additional service: the Trendz Python Executor, which can securely run Python code.
 
-You can learn more about how to install it [here](/docs/trendz/install/python-executor-configuration).
+You can learn more about how to install it [here](/docs/trendz/install/python-executor-configuration-linux).
 
 ## Step 9. HTTPS configuration
 
