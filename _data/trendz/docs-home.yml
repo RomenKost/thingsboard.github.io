@@ -45,6 +45,13 @@ toc:
       path: /docs/trendz/view-settings/
     - title: View collections
       path: /docs/trendz/view-collections/
+- title: Metric exploration
+  new: true
+  section:
+    - title: Overview
+      path: /docs/trendz/metric/overview/
+    - title: Generate New Metrics
+      path: /docs/trendz/metric/generate-new-metric/
 - title: Anomaly detection
   section:
     - title: Overview
