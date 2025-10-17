@@ -142,6 +142,58 @@ tabs-time-patterns:
     image: /images/trendz/metric/overview/tabs-time-patterns-4.png
     title: '<b>Calendar Heatmap</b> – Aggregation by calendar days.'
   
+tabs-range-default-actions:
+  0:
+    image: /images/trendz/metric/overview/tabs-range-default-actions-1.png
+    title: 'Configure ranges with colors.'
+  1:
+    image: /images/trendz/metric/overview/tabs-range-default-actions-2.png
+    title: 'Remove ranges.'
+  2:
+    image: /images/trendz/metric/overview/tabs-range-default-actions-3.png
+    title: 'Add ranges.'
+  3:
+    image: /images/trendz/metric/overview/tabs-range-default-actions-4.png
+    title: 'Reset to default (three automatically calculated ranges).'
+
+tabs-range-views:
+  0:
+    image: /images/trendz/metric/overview/tabs-range-views-1.png
+    title: 'After configuration, click <b>Rebuild</b> to build views.'
+  1:
+    image: /images/trendz/metric/overview/tabs-range-views-2.png
+    title: '<b>Summary Cards</b> - Total duration or percentage.'
+  2:
+    image: /images/trendz/metric/overview/tabs-range-views-3.png
+    title: '<b>Charts</b> - Duration or percentage grouped by time.'
+  3:
+    image: /images/trendz/metric/overview/tabs-range-views-4.png
+    title: '<b>Range Summary</b> - Most frequent range and analysis period.'
+
+tabs-range-customization:
+  0:
+    image: /images/trendz/metric/overview/tabs-range-customization-1.png
+    title: '<b>Value Aggregation</b> - Duration or duration percent.'
+  1:
+    image: /images/trendz/metric/overview/tabs-range-customization-2.png
+    title: '<b>Time Aggregation</b> - Select time unit.'
+  2:
+    image: /images/trendz/metric/overview/tabs-range-customization-3.png
+    title: '<b>Chart Type</b> - Line Chart.'
+  3:
+    image: /images/trendz/metric/overview/tabs-range-customization-4.png
+    title: '<b>Chart Type</b> - Stacked Bar.'
+
+tabs-range-save-view:
+  0:
+    image: /images/trendz/metric/overview/tabs-range-save-view-1.png
+    title: 'Click <b>Save View</b>'
+  1:
+    image: /images/trendz/metric/overview/tabs-range-save-view-2.png
+    title: 'Click <b>Save</b>'
+  2:
+    image: /images/trendz/metric/overview/tabs-range-save-view-3.png
+    title: 'The view is saved.'
 
 ---
 
@@ -305,11 +357,15 @@ You can:
 2. Add or remove ranges.
 3. Reset to default (three automatically calculated ranges).
 
+{% include images-gallery.html imageCollection="tabs-range-default-actions" %}
+
 After configuration, click **Rebuild** to view:
 
 * **Summary Cards** - Total duration or percentage.
 * **Charts** - Duration or percentage grouped by time.
 * **Range Summary** - Most frequent range and analysis period.
+
+{% include images-gallery.html imageCollection="tabs-range-views" %}
 
 Chart customization options:
 
@@ -317,5 +373,11 @@ Chart customization options:
 * **Time Aggregation** - Select time unit.
 * **Chart Type** - Stacked Bar or Line Chart.
 
+{% include images-gallery.html imageCollection="tabs-range-customization" %}
+
 You can save the range configuration as a **View** using the **Save View** button, and later embed it into a ThingsBoard dashboard. 
 Refer to the documentation on sharing views to ThingsBoard for details.
+
+## Next Steps
+
+{% assign currentGuide = "MetricExploration" %}{% include templates/trndz-guides-banner.md %}

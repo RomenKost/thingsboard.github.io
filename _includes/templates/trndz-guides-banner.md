@@ -4,6 +4,12 @@
 {% if currentGuide != "InstallationOptions" %}
 - [**Installation guides**](/docs/trendz/install/installation-options/) - Learn how to setup ThingsBoard on various available operating systems.
 {% endif %}
+{% if currentGuide != "AiAssistant" %}
+- [**Metric Explorer**](/docs/trendz/metric/overview) - Learn how to explore and create new metrics with Trendz Metric Explorer.
+{% endif %}
+{% if currentGuide != "AnomalyDetection" %}
+- [**Anomaly Detection**](/docs/trendz/anomaly/overview.md) - Learn how to identify anomalies in the data.
+{% endif %}
 {% if currentGuide != "CalculatedFields" %}
 - [**Calculated Fields**](/docs/trendz/calculated-fields) - Learn about Calculated fields and how to use them.
 {% endif %}
@@ -12,9 +18,6 @@
 {% endif %}
 {% if currentGuide != "Prediction" %}
 - [**Prediction**](/docs/trendz/prediction) - Learn how to make forecasts and predict telemetry behavior.
-{% endif %}
-{% if currentGuide != "AnomalyDetection" %}
-- [**Anomaly Detection**](/docs/trendz/anomaly/overview.md) - Learn how to identify anomalies in the data.
 {% endif %}
 {% if currentGuide != "Filtering" %}
 - [**Filters**](/docs/trendz/data-filtering) - Learn how filter dataset during analysis.
