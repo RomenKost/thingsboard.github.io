@@ -4,7 +4,7 @@
 {% if currentGuide != "InstallationOptions" %}
 - [**Installation guides**](/docs/trendz/install/installation-options/) - Learn how to setup ThingsBoard on various available operating systems.
 {% endif %}
-{% if currentGuide != "AiAssistant" %}
+{% if currentGuide != "MetricExplorer" %}
 - [**Metric Explorer**](/docs/trendz/metric/overview) - Learn how to explore and create new metrics with Trendz Metric Explorer.
 {% endif %}
 {% if currentGuide != "AnomalyDetection" %}
