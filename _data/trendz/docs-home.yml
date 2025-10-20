@@ -67,15 +67,19 @@ toc:
     - title: Anomaly-Driven Alarm Creation
       path: /docs/trendz/anomaly/alarms/
 - title: Calculated Fields
+  new: true
   section:
     - title: Overview
-      path: /docs/trendz/calculated-fields/
+      path: /docs/trendz/calculations/overview/
     - title: Batch calculations
-      path: /docs/trendz/batch-calculated-fields/
+      path: /docs/trendz/calculations/batch/
+    - title: Native calculations
+      new: true
+      path: /docs/trendz/calculations/native/
     - title: Save metric to ThingsBoard
-      path: /docs/trendz/save-calculated-to-thingsboard/
+      path: /docs/trendz/calculations/save-to-thingsboard/
     - title: Calculate time to value
-      path: /docs/trendz/calculate-time-to-value/
+      path: /docs/trendz/calculations/time-to-value/
 - title: Prediction
   section:
     - title: Overview

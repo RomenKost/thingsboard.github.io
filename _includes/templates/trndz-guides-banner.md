@@ -8,10 +8,10 @@
 - [**Metric Explorer**](/docs/trendz/metric/overview) - Learn how to explore and create new metrics with Trendz Metric Explorer.
 {% endif %}
 {% if currentGuide != "AnomalyDetection" %}
-- [**Anomaly Detection**](/docs/trendz/anomaly/overview.md) - Learn how to identify anomalies in the data.
+- [**Anomaly Detection**](/docs/trendz/anomaly/overview) - Learn how to identify anomalies in the data.
 {% endif %}
 {% if currentGuide != "CalculatedFields" %}
-- [**Calculated Fields**](/docs/trendz/calculated-fields) - Learn about Calculated fields and how to use them.
+- [**Calculated Fields**](/docs/trendz/calculations/overview) - Learn about Calculated fields and how to use them.
 {% endif %}
 {% if currentGuide != "States" %}
 - [**States**](/docs/trendz/states) - Learn how to define and analyse states for assets based on raw telemetry.

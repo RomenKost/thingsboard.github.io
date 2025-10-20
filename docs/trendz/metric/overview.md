@@ -281,7 +281,7 @@ Trendz entity.
 If the field you are interested in does not appear in an appropriate folder, ensure the entity is saving telemetry to ThingsBoard. 
 Refer to the respective guides to set up jobs to save telemetry to ThingsBoard:
 
-* [Calculation Field](/docs/trendz/save-calculated-to-thingsboard) 
+* [Calculation Field](/docs/trendz/calculations/save-to-thingsboard) 
 * [Prediction Model](/docs/trendz/prediction-save-to-tb)
 * [Anomaly Model](/docs/trendz/anomaly/save-to-tb)
 

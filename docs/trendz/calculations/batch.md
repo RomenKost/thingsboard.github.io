@@ -2,8 +2,8 @@
 layout: docwithnav-trendz
 assignees:
 - vparomskiy
-title: Batch Calculated Fields
-description: Batch Calculated Fields
+title: Batch Calculation Fields
+description: Batch Calculation Fields
 ---
 
 * TOC

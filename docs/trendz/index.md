@@ -67,7 +67,7 @@ and explore step-by-step how-to guides for constructing end-to-end IoT solutions
         </a>
     </div>
     <div class="col-12 col-sm-6 col-lg col-xxl-6 col-4xl mb-4">
-        <a class="feature-card" href="/docs/trendz/calculated-fields/">
+        <a class="feature-card" href="/docs/trendz/calculations/overview/">
             <img class="feature-logo" src="/images/trendz/icons/calculation.svg" alt="calculated-fields">
             <div class="feature-title">Calculation Fields</div>
             <div class="feature-text">
