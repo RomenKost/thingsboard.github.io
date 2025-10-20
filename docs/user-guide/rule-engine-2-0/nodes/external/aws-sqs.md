@@ -1,11 +1,11 @@
 ---
 layout: docwithnav
 title: aws sqs
-description: Publishes messages to the AWS SQS (Amazon Simple Queue Service).
+description: Publishes incoming message data to AWS Simple Queue Service (SQS) queue and returns response metadata in the outgoing message.
 breadcrumbs: "true"
 breadcrumbs-steps: "2"
 hidetoc: "true"
-redirect_from: "/reference/plugins/sqs/"
+redirect_from: "/docs/reference/plugins/sqs/"
 ---
 
 {% include get-hosts-name.html %}

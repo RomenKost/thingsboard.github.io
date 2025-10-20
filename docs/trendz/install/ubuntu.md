@@ -10,7 +10,7 @@ description: Installing ThingsBoard Trendz Analytics on Ubuntu
 * TOC
 {:toc}
 
-This guide explains how to install **Trendz Analytics** on **Ubuntu 18.04 LTS** or **Ubuntu 20.04 LTS**.
+This guide explains how to install **Trendz Analytics** on **Ubuntu 22.04 LTS** or **Ubuntu 24.04 LTS**.
 
 {% capture tb_3_7_0_upgrade_note %}
 **Important note before proceeding with Ubuntu installation**

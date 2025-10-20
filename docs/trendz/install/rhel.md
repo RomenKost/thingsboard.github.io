@@ -10,7 +10,7 @@ description: Installing ThingsBoard Trendz Analytics  on CentOS/RHEL
 * TOC
 {:toc}
 
-This guide explains how to install **Trendz Analytics** on **RHEL/CentOS 7 or 8**.
+This guide explains how to install **Trendz Analytics** on **RHEL/CentOS 8 or 9**.
 
 {% capture tb_3_7_0_upgrade_note %}
 **Important note before proceeding with RHEL/CentOS installation**
