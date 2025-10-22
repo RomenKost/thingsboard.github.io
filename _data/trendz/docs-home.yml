@@ -37,10 +37,10 @@ toc:
           path: /docs/trendz/visualizations-heatmap/
         - title: Calendar
           path: /docs/trendz/visualizations-calendar/
-        - title: Cards with line chart
-          path: /docs/trendz/visualizations-card-with-line/
         - title: Cards
           path: /docs/trendz/visualizations-card/
+        - title: Cards with line chart
+          path: /docs/trendz/visualizations-card-with-line/
     - title: View settings
       path: /docs/trendz/view-settings/
     - title: View collections
@@ -52,6 +52,8 @@ toc:
       path: /docs/trendz/metric/overview/
     - title: Generate New Metrics
       path: /docs/trendz/metric/generate-new-metric/
+    - title: Use Generated Metrics in ThingsBoard
+      path: /docs/trendz/metric/use-in-thingsboard/
 - title: Anomaly detection
   section:
     - title: Overview
@@ -100,7 +102,7 @@ toc:
       path: /docs/trendz/ai-widget-summary/
     - title: Trendz Prompts
       path: /docs/trendz/ai-assistance-prompts/
-    - title: Large Language Model (LLM) Configuration
+    - title: Enable AI Features
       path: /docs/trendz/custom-ai-model-configuration/
 - title: Share views
   section:

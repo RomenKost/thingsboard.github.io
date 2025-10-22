@@ -1,7 +1,7 @@
 ---
 layout: docwithnav-trendz
-title: Large Language Model (LLM) Configuration
-description: Step-by-step guide how to configure Large Language Model (LLM).
+title: Enable AI Features
+description: Step-by-step guide how to enable AI features in Trendz
 
 trendz-assistance-use-own-model:
   0:
@@ -25,15 +25,11 @@ trendz-assistance-ai-models:
 * TOC
 {:toc}
 
-To enable the AI features on the self-hosted Trendz application, or to not be related to the provided by cloud token limits, it is possible to configure your own large language model.
+## AI Assistant Settings
 
-To enable/configure your own model, it’s necessary to go: *Setting* -> *General* -> *AI Assistant*
-{% include images-gallery.html imageCollection="trendz-assistance-use-own-model" %}
+## Token Usage
 
-To use the own model it’s necessary to enable **Use own model**. After enabling the own model it’s possible to choose an AI provider and model. Additionally, it’s necessary to enter *API key* or
-*Access Key* and *Secret Key* (related to the chosen provider).
-
-⚠️ *Note*: each AI Assistance request uses around 10000 input tokens and 1000 output tokes. Token usage is related to the difficulty of request and provided topology size.
+## AI Model Providers Overview
 
 Currently, Trendz could be integrated with the following models:
 * OPEN_AI
@@ -43,9 +39,7 @@ Currently, Trendz could be integrated with the following models:
 
 {% include images-gallery.html imageCollection="trendz-assistance-ai-models" %}
 
-⚠️ *Note*: to save any changes in the configuration it’s necessary to press the “Save” button.
-
-## Google (Recommended):
+### Google (Recommended):
 
 Please refer to the [Google API key documentation](https://ai.google.dev/gemini-api/docs/api-key) to find out how to create an API key for Google models.
 
@@ -66,7 +60,7 @@ Supported models:
   * Input (1m) token price: 0.3$
   * Output (1m) token price: 2.5$
 
-## Open AI
+### Open AI
 
 Please refer to the [Open AI API key documentation](https://platform.openai.com/api-keys) to find out how to create API keys for Open AI models.
 
@@ -84,7 +78,7 @@ Supported models:
   * Input (1m) token price: 1.1$
   * Output (1m) token price: 4.4$
 
-## Amazon Bedrock
+### Amazon Bedrock
 
 Please refer to [AWS API key documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api.html) to find out how to create Access key IDs and Secret access keys.
 
@@ -121,7 +115,7 @@ Supported models:
     * Input (1m) token price: 3$
     * Output (1m) token price: 12$
 
-## Other Models (Custom)
+### Other Models (Custom)
 
 It’s possible to connect any model that supports the OpenAI API standard. To do this, choose the *Custom* provider,  
 enter the model URL, model name, and API key.
