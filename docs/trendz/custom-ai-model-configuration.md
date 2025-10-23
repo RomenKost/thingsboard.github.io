@@ -1,6 +1,6 @@
 ---
 layout: docwithnav-trendz
-title: AI Settings
+title: Enable AI Features
 description: Step-by-step guide how to set uo AI Settings in Trendz
 
 ai-settings:
