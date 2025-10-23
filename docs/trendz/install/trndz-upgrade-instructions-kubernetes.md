@@ -10,13 +10,6 @@ description: ThingsBoard Trendz Analytics upgrade instructions kubernetes
 
 ## Upgrading to 1.14.0
 
-{% capture tb_3_7_0_upgrade_note %}
-**Important note before upgrading to Trendz 1.14.0**
-
-For the correct work of Trendz Python Executor, you need to pull and update the latest version of trendz-python-executor-config.yml.
-{% endcapture %}
-{% include templates/warn-banner.md content=tb_3_7_0_upgrade_note %}
-
 These steps are applicable for 1.13.2 Trendz Analytics version.
 
 ### Obtain Trendz Kubernetes scripts

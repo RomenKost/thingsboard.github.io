@@ -39,7 +39,6 @@ services:
       THROTTLING_QUEUE_CAPACITY: 10
       THROTTLING_THREAD_POOL_SIZE: 6
       NETWORK_BUFFER_SIZE: 10485760
-      TRENDZ_CALLBACK_URL: http://10.0.0.101:8888
     volumes:
       - ~/.mytrendz-data/python-executor:/python-executor
 ```
@@ -51,7 +50,6 @@ Explanation of key fields:
 * `restart: always` - automatically restarts the executor on failure or system reboot
 * `thingsboard/trendz-python-executor:{{ site.release.trendz_ver }}` - Docker image for Trendz Python Executor
 * `SCRIPT_ENGINE_RUNTIME_TIMEOUT` - timeout for Python script execution
-* `TRENDZ_CALLBACK_URL` - URL to connect to Trendz REST API (must be reachable from the Python Executor container)
 * `~/.mytrendz-data/python-executor:/python-executor` - mounts the volume `~/.mytrendz-data/python-executor` to Trendz Python Executor additional data directory
 
 ### Step 2: Create Volumes
@@ -71,21 +69,11 @@ The Python Executor must be started after the Trendz service is running.
 
 ### Step 3: Start Python Executor
 
-Python Executor must be started after the Trendz service is running.
-
 ```bash
 docker compose up -d
 docker compose logs -f mypyexecutor
 ```
 {: .copy-code}
-
-If Trendz is not running or `TRENDZ_CALLBACK_URL` is incorrect, the logs may show:
-
-```text
-Caused by: org.thingsboard.trendz.pythonexecutor.exception.engine.PythonException: Python script execution was failed: requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /apiTrendz/publicApi/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x78b11f721c70>: Failed to establish a new connection: [Errno 111] Connection refused'))
-```
-
-**Note:** If running Python Executor in Docker while Trendz is running without Docker on the same host, do not use `localhost` in the callback URL. Refer to [Docker Networking](https://docs.docker.com/desktop/features/networking/#i-want-to-connect-from-a-container-to-a-service-on-the-host).
 
 ### Step 4: Connect Trendz to Python Executor
 
@@ -117,13 +105,6 @@ Change the Python Executor image tag to version 1.14.0:
 ```
 {: .copy-code}
 
-Add the environment variable `TRENDZ_CALLBACK_URL`. Trendz must be reachable via this URL from the Python Executor container:
-
-```yml
-      TRENDZ_CALLBACK_URL: http://10.0.0.101:8888
-```
-{: .copy-code}
-
 Add the following lines at the end of the Python Executor configuration:
 
 ```yml
@@ -149,7 +130,6 @@ services:
       THROTTLING_QUEUE_CAPACITY: 10
       THROTTLING_THREAD_POOL_SIZE: 6
       NETWORK_BUFFER_SIZE: 10485760
-      TRENDZ_CALLBACK_URL: http://10.0.0.101:8888
     volumes:
       - ~/.mytrendz-data/python-executor:/python-executor
 ```
@@ -168,8 +148,6 @@ mkdir -p ~/.mytrendz-data/python-executor && sudo chown -R 799:799 ~/.mytrendz-d
 
 **Note:** Replace the directory `~/.mytrendz-data` with the directories you plan to use in `docker-compose.yaml`.
 
-The Python Executor must be started after the Trendz service is running.
-
 ### Restart Python Executor
 
 Restart the Python Executor to apply the changes:
@@ -179,15 +157,6 @@ docker compose restart -d
 docker compose logs -f mypyexecutor
 ```
 {: .copy-code}
-
-If Trendz is not running or `TRENDZ_CALLBACK_URL` is incorrect, the logs may show:
-
-```text
-Caused by: org.thingsboard.trendz.pythonexecutor.exception.engine.PythonException: Python script execution failed: requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /apiTrendz/publicApi/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x78b11f721c70>: Failed to establish a new connection: [Errno 111] Connection refused'))
-```
-
-**Note:** If running Python Executor in Docker while Trendz is running without Docker on the same host, do not use `localhost` in the callback URL.
-Refer to [Docker Networking](https://docs.docker.com/desktop/features/networking/#i-want-to-connect-from-a-container-to-a-service-on-the-host).
 
 ## How to Connect Additional Libraries to the Python Executor
 
