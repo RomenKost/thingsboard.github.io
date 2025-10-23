@@ -8,6 +8,10 @@ description: ThingsBoard Trendz Analytics Release Notes
 * TOC
 {:toc}
 
+## v1.14.0 (Oct 29, 2025)
+
+//TODO add here
+
 ## v1.13.2 (June 27, 2025)
 
 **Improvements:**

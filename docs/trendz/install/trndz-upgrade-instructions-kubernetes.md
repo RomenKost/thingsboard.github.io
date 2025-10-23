@@ -8,7 +8,7 @@ description: ThingsBoard Trendz Analytics upgrade instructions kubernetes
 * TOC
 {:toc}
 
-## Upgrading to 1.13.2
+## Upgrading to 1.14.0
 
 {% capture tb_3_7_0_upgrade_note %}
 **Important note before upgrading to Trendz 1.14.0**
@@ -17,7 +17,7 @@ For the correct work of Trendz Python Executor, you need to pull and update the 
 {% endcapture %}
 {% include templates/warn-banner.md content=tb_3_7_0_upgrade_note %}
 
-These steps are applicable for 1.13.1 Trendz Analytics version.
+These steps are applicable for 1.13.2 Trendz Analytics version.
 
 ### Obtain Trendz Kubernetes scripts
 
@@ -52,13 +52,13 @@ kubectl scale deployment trendz-app-deployment --replicas=1
 Create a file “.upgradeversion” inside the directory by calling the command that must be executed by Trendz pod.
 Run the command:
 ```text
-kubectl exec <POD_NAME> -- sh -c "echo '1.13.1' > /data/.upgradeversion"
+kubectl exec <POD_NAME> -- sh -c "echo '1.13.2' > /data/.upgradeversion"
 ```   
 You can get the pod name by the command:
 ```text
 kubectl get pods -l app=trendz-app-pod-label
 ```   
-Use another version instead of '1.13.1 if another is needed
+Use another version instead of '1.13.2 if another is needed
 
 ### Change image version
 
