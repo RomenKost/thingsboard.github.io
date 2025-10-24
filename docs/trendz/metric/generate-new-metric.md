@@ -406,7 +406,7 @@ Learn how to enable it [here](/docs/trendz/custom-ai-model-configuration/).
 
 {% include images-gallery.html imageCollection="ai-assistance-without-ai" %}
 
-### Use in Trendz and ThingsBoard
+### Create Calculation
 
 You can use the metric across Trendz and even ThingsBoard by saving it to the Native Calculation. To do this:
 
@@ -463,7 +463,7 @@ If a Native Calculation isn't created for the chosen metric, you will be prompte
 If a Native Calculation was created from the chosen metric but has no points in the selected time range, you will be prompted
 to run a reprocess job to save data points to ThingsBoard.
 
-Read more about these tabs [here]().
+Read more about these tabs [here](/docs/trendz/metric/overview/#tabs-section).
 
 ## Best Practices
 

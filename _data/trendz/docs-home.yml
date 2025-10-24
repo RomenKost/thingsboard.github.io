@@ -52,7 +52,7 @@ toc:
       path: /docs/trendz/metric/overview/
     - title: Generate New Metrics
       path: /docs/trendz/metric/generate-new-metric/
-    - title: Use Generated Metrics in ThingsBoard
+    - title: Use New Metrics in ThingsBoard
       path: /docs/trendz/metric/use-in-thingsboard/
 - title: Anomaly detection
   section:

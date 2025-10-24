@@ -1,7 +1,7 @@
 ---
 layout: docwithnav-trendz
-title: Use Generated Metrics in ThingsBoard 
-description: Step-by-step guide to use Generated Metrics in ThingsBoard
+title: Use New Metrics in ThingsBoard 
+description: Step-by-step guide to use new Metrics in ThingsBoard
 ---
 
 * TOC
