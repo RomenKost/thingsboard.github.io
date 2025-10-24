@@ -128,10 +128,10 @@ tabs-statistics:
 tabs-time-patterns:
   0:
     image: /images/trendz/metric/overview/tabs-time-patterns-1.png
-    title: '<b>Hourly Analysis</b> - Aggregation by hour of day.'
+    title: '<b>Hour of Day Distribution</b> - Aggregation by hour of day.'
   1:
     image: /images/trendz/metric/overview/tabs-time-patterns-2.png
-    title: '<b>Weekly Analysis</b> - Aggregation by day of week.'
+    title: '<b>Day of Week Distribution</b> - Aggregation by day of week.'
   2:
     image: /images/trendz/metric/overview/tabs-time-patterns-3.png
     title: '<b>Weekly Heatmap</b> - Aggregation by hour and weekday.'
@@ -334,8 +334,8 @@ Analyzes telemetry behavior across time-based aggregations. Independent timerang
 
 Charts include:
 
-1. **Hourly Analysis** - Aggregation by hour of day.
-2. **Weekly Analysis** - Aggregation by day of week.
+1. **Hour of Day Distribution** - Aggregation by hour of day.
+2. **Day of Week Distribution** - Aggregation by day of week.
 3. **Weekly Heatmap** - Aggregation by hour and weekday.
 4. **Calendar Heatmap** - Aggregation by calendar days.
 

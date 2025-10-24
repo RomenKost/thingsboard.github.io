@@ -176,6 +176,23 @@ create-calculation:
     image: /images/trendz/metric/new-metric/create-calculation-4.png
     title: "Now the calculation field is saved in Trendz but still does not have telemetry points in ThingsBoard."
 
+run-reprocess:
+  0:
+    image: /images/trendz/metric/new-metric/run-reprocess-1.png
+    title: "Click the <b>Run</b> button to start the process."
+  1:
+    image: /images/trendz/metric/new-metric/run-reprocess-2.png
+    title: "Select the <b>time range</b> for reprocessing (this defines the period of data to be saved to ThingsBoard)."
+  2:
+    image: /images/trendz/metric/new-metric/run-reprocess-3.png
+    title: "Choose the <b>items</b> to include in the save operation (you can select the current item, all items, or a subset of items)."
+  3:
+    image: /images/trendz/metric/new-metric/run-reprocess-4.png
+    title: "Click <b>Run</b> to begin the task."
+  4:
+    image: /images/trendz/metric/new-metric/run-reprocess-5.png
+    title: "Wait until the reprocess task completes. You can navigate to other metrics while the process is running."
+
 metric-rename:
   0:
     image: /images/trendz/metric/new-metric/metric-rename-1.png
@@ -206,6 +223,14 @@ open-calculation:
     image: /images/trendz/metric/new-metric/open-calculation-2.png
     title: "The calculation field was opened."
 
+associated-calculation:
+  0:
+    image: /images/trendz/metric/new-metric/associated-calculation-1.png
+    title: 'If the code of the associated Calculation Field was modified, you will see the warning <b>"Calculation field is not synced with the metric"</b>.'
+  1:
+    image: /images/trendz/metric/new-metric/associated-calculation-2.png
+    title: 'If the metric itself was changed, you will see the warning <b>"Calculation field is outdated and needs to be updated"</b>.'
+
 update-calculation:
   0:
     image: /images/trendz/metric/new-metric/update-calculation-1.png
@@ -216,11 +241,27 @@ update-calculation:
   2:
     image: /images/trendz/metric/new-metric/update-calculation-3.png
     title: "Choose <b>Create new calculation</b> option and click <b>Save</b> button to create new Calculation Field."
-      
-template:
+
+tabs-create-calculation:
   0:
-    image: /images/trendz/metric/new-metric/.png
-    title: ""
+    image: /images/trendz/metric/new-metric/tabs-create-calculation-1.png
+    title: "If a Native Calculation isn't created for the chosen metric, you will be prompted to create a Calculation Field from it."  
+  1:
+    image: /images/trendz/metric/new-metric/tabs-create-calculation-2.png
+    title: "If a Native Calculation isn't created for the chosen metric, you will be prompted to create a Calculation Field from it."  
+
+tabs-reprocess-calculation:
+  0:
+    image: /images/trendz/metric/new-metric/tabs-reprocess-calculation-1.png
+    title: "If a Native Calculation was created from the chosen metric but has no points in the selected time range, you will be prompted to run a reprocess job to save data points to ThingsBoard."
+  1:
+    image: /images/trendz/metric/new-metric/tabs-reprocess-calculation-2.png
+    title: "If a Native Calculation was created from the chosen metric but has no points in the selected time range, you will be prompted to run a reprocess job to save data points to ThingsBoard."
+
+tabs-with-data:
+  0:
+    image: /images/trendz/metric/new-metric/tabs-with-data.png
+    title: "Once telemetry is saved to ThingsBoard, you can check the generated data on each tab."
 
 ---
 
@@ -406,7 +447,7 @@ Learn how to enable it [here](/docs/trendz/custom-ai-model-configuration/).
 
 {% include images-gallery.html imageCollection="ai-assistance-without-ai" %}
 
-### Create Calculation
+### Create Calculation Field
 
 You can use the metric across Trendz and even ThingsBoard by saving it to the Native Calculation. To do this:
 
@@ -416,9 +457,42 @@ You can use the metric across Trendz and even ThingsBoard by saving it to the Na
 
 Now the calculation field is saved in Trendz but still does not have telemetry points in ThingsBoard.
 
-To save telemetries to ThingsBoard follow the [guide](/docs/trendz/metric/use-in-thingsboard/).
-
 {% include images-gallery.html imageCollection="create-calculation" %}
+
+You can also be prompted to run a **Reprocess Task** that saves data to ThingsBoard:
+
+1. Click the **Run** button to start the process.
+2. Select the **time range** for reprocessing (this defines the period of data to be saved to ThingsBoard).
+3. Choose the **items** to include in the save operation (you can select the current item, all items, or a subset of items).
+4. Click **Run** to begin the task.
+5. Wait until the reprocess task completes. You can navigate to other metrics while the process is running.
+
+Once the reprocess task is completed, the telemetry points will be saved to ThingsBoard.
+
+{% include images-gallery.html imageCollection="run-reprocess" %}
+
+For detailed instructions on saving telemetries to ThingsBoard, follow the [guide](/docs/trendz/metric/use-in-thingsboard/).
+
+### Manage Associated Calculation Field
+
+If the metric has an associated Calculation Field, you can open it by clicking the **Open Calculation** button.
+
+{% include images-gallery.html imageCollection="open-calculation" %}
+
+If the code of the associated Calculation Field was modified, you will see the warning **"Calculation field is not synced with the metric"**.
+If the metric itself was changed, you will see the warning **"Calculation field is outdated and needs to be updated"**.
+
+{% include images-gallery.html imageCollection="associated-calculation" %}
+
+To update the associated Calculation Field or create a new one:
+
+1. Click the **Save calculation** button.
+2. Choose **Update existing calculation** and click **Save** to update the associated Calculation Field.
+3. Choose **Create new calculation** and click **Save** to create a new Calculation Field.
+
+If the **Create new calculation** option is selected, the metric will now be associated with the newly created Calculation Field.
+
+{% include images-gallery.html imageCollection="update-calculation" %}
 
 ### Other Actions
 
@@ -437,22 +511,6 @@ To delete a metric:
 
 {% include images-gallery.html imageCollection="metric-delete" %}
 
-If the metric has an associated Calculation Field, you can:
-
-Open it by clicking on the **Open Calculation** button.
-
-{% include images-gallery.html imageCollection="open-calculation" %}
-
-Update the associated Calculation Field or create a new one:
-
-1. Click **Save calculation** button.
-2. Choose **Update existing calculation** option and click **Save** button to update the associated Calculation Field.
-3. Choose **Create new calculation** option and click **Save** button to create new Calculation Field.
-
-If the create option is chosen, then now metric will be associated with the last created calculation.
-
-{% include images-gallery.html imageCollection="update-calculation" %}
-
 ## Tabs Section
 
 It's possible to see **Statistics**, **Time Patterns**, and **Range Analysis** for a generated metric only if it has a 
@@ -460,10 +518,20 @@ corresponding Native Calculation, for which telemetry data is present in ThingsB
 
 If a Native Calculation isn't created for the chosen metric, you will be prompted to create a Calculation Field from it.
 
+{% include images-gallery.html imageCollection="tabs-create-calculation" %}
+
 If a Native Calculation was created from the chosen metric but has no points in the selected time range, you will be prompted
 to run a reprocess job to save data points to ThingsBoard.
 
+{% include images-gallery.html imageCollection="tabs-reprocess-calculation" %}
+
+Once telemetry is saved to ThingsBoard, you can check the generated data on each tab.
+
+{% include images-gallery.html imageCollection="tabs-with-data" %}
+
 Read more about these tabs [here](/docs/trendz/metric/overview/#tabs-section).
+
+For detailed instructions on saving telemetries to ThingsBoard, follow the [guide](/docs/trendz/metric/use-in-thingsboard/).
 
 ## Best Practices
 
