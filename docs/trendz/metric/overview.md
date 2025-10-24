@@ -202,7 +202,7 @@ analyze time patterns, and explore general telemetry behavior. It also enables t
 ones using **AI Assistance** or **AI Suggestions**. All generated metrics can be fully integrated into the Trendz ecosystem 
 and used within **ThingsBoard**.
 
-You can access the Metric Explorer by clicking the **<>** icon.
+You can access the Metric Explorer by clicking the ![image](/images/trendz/metric/overview/chart-icon-without-preview.svg) icon.
 
 The interface consists of three main sections:
 
@@ -243,7 +243,7 @@ perform a **topology discovery** to sync the latest ThingsBoard structure with T
 
 {% include images-gallery.html imageCollection="inactive-telemetries" %}
 
-You can also use the **+ New Metric** button to create new metrics from existing ones. This functionality is described [here].
+You can also use the **+ New Metric** button to create new metrics from existing ones. This functionality is described [here](/docs/trendz/metric/generate-new-metric).
 
 {% include images-gallery.html imageCollection="new-metric-button" %}
 
@@ -286,7 +286,7 @@ Refer to the respective guides to set up jobs to save telemetry to ThingsBoard:
 
 ### Generated Metrics
 
-Displays metrics generated directly within the Metric Explorer. Read more about generated metrics [here]().
+Displays metrics generated directly within the Metric Explorer. Read more about generated metrics [here](/docs/trendz/metric/generate-new-metric).
 
 {% include images-gallery.html imageCollection="fields-generated-metrics" %}
 
